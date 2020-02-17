@@ -1,42 +1,51 @@
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
     margin: 0;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
-ul,li{
+
+ul,
+li {
     margin: 0;
     padding: 15px;
     display: inline-block;
 }
-p{
+
+p {
     margin: 0;
     padding: 0;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
     display: inline-block;
 }
 
-.main-block{
+.main-block {
     width: 100%;
     background-image: url(../images/slide-1.webp);
     background-size: cover;
 }
-.container{
+
+.container {
     width: 80%;
     margin: auto;
     overflow: auto;
 }
-.logo{
+
+.logo {
     width: 27%;
     padding: 15px;
     float: left;
 }
-.menus{
+
+.menus {
     float: left;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
@@ -45,30 +54,36 @@ a{
     font-weight: 600;
     color: white;
 }
-.menu{
-}
-.red-color{
-        color: #d73e4d;
-}
-.menu:hover{
+
+.menu {}
+
+.red-color {
     color: #d73e4d;
 }
-.block{
+
+.menu:hover {
+    color: #d73e4d;
+}
+
+.block {
     color: white;
     font-family: 'Raleway', sans-serif;
     text-align: center;
     padding: 15% 0px;
 }
-.title{
+
+.title {
     font-size: 32px;
     line-height: 52.8px;
     font-weight: 600;
 }
-.sub-title{
+
+.sub-title {
     font-size: 20px;
     letter-spacing: 1px;
 }
-.button{
+
+.button {
     padding: 0px 15px;
     margin: auto;
     font-size: 14px;
@@ -79,7 +94,8 @@ a{
     position: relative;
     z-index: 3;
 }
-.button:after{
+
+.button:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -88,7 +104,8 @@ a{
     height: 100%;
     width: 0%;
 }
-.button:before{
+
+.button:before {
     content: '';
     position: absolute;
     left: 0;
@@ -99,6 +116,7 @@ a{
     transition: .3s all;
     background-color: #d73e4d;
 }
+
 .button:hover::before {
     height: 100%;
     width: 100%;
@@ -108,19 +126,22 @@ a{
     height: 100%;
     width: 100%;
 }
-.section-2{
+
+.section-2 {
     width: 55%;
     margin: auto;
     padding: 80px 0px 50px 0px;
     text-align: center;
     font-family: raleway, sans-serif;
 }
-.about-title{
+
+.about-title {
     font-size: 23px;
     font-weight: 700;
     line-height: 30.6px;
 }
-.line{
+
+.line {
     width: 4%;
     height: 3px;
     background-color: #d73e4d;
@@ -128,31 +149,36 @@ a{
     margin: auto;
     margin-bottom: 25px;
 }
-.details{
+
+.details {
     color: #6f6f6f;
-    font-family:raleway, sans-serif;
+    font-family: raleway, sans-serif;
     font-size: 16px;
     line-height: 26px;
 }
-.card{
+
+.card {
     width: 25%;
-    font-family:raleway, sans-serif;
+    font-family: raleway, sans-serif;
     float: left;
     text-align: center;
     padding: 30px;
 }
-.img{
+
+.img {
     text-align: center;
     color: red;
-    margin: 10px 0px;    
+    margin: 10px 0px;
     line-height: 130px;
 }
-.fa:hover{
+
+.fa:hover {
     background-color: #d73e4d;
     color: white;
     transition: .3s all;
 }
-.fa{
+
+.fa {
     padding: 40px 45px;
     border-radius: 50%;
     border-color: #d73e4d;
@@ -160,30 +186,84 @@ a{
     color: black;
     border-style: solid;
 }
-.black-color{
+
+.black-color {
     color: black;
 }
-.name{
+
+.name {
     padding: 10px 0px;
     font-size: 22px;
 }
-.name:hover{
+
+.name:hover {
     transition: .3s all;
     color: #d73e4d;
 }
-.cards{
+
+.cards {
     color: #292929;
     padding: 0px 15px;
     text-align: center;
 }
-.card-button{
+
+.card-button {
     margin: 10px auto;
     text-align: center;
 }
-.bgcolor{
+
+.bgcolor {
     width: 100%;
     background-color: #232a34;
 }
-.white-color{
+
+.white-color {
     color: white;
+}
+
+.block {
+    width: 80%;
+    margin: auto;
+    color: #808489;
+    overflow: auto;
+    font-family: raleway, sans-serif;
+}
+
+.box {
+    width: 33.33%;
+    float: left;
+}
+
+.box-container {
+    padding: 15px;
+}
+
+.contain {
+    padding: 120px 50px;
+    border-color: #808489;
+    border-style: solid;
+    border-width: 0.5px;
+    position: relative;
+}
+
+.icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.icon-name {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.8px;
+}
+
+.box::before {
+    content: "";
+    top: -10px;
+    transition: .3s all;
+    position: absolute;
+}
+
+.box::before:hover {
+    border-color: #d73e4d;
 }
