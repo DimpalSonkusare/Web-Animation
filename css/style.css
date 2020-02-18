@@ -172,19 +172,22 @@ a {
     line-height: 130px;
 }
 
-.fa:hover {
+.card:hover .fa {
     background-color: #d73e4d;
     color: white;
     transition: .3s all;
 }
 
-.fa {
-    padding: 40px 45px;
+.border-property {
     border-radius: 50%;
     border-color: #d73e4d;
+    border-style: solid;
+}
+
+.fa {
+    padding: 40px 45px;
     font-size: 50px;
     color: black;
-    border-style: solid;
 }
 
 .black-color {
@@ -196,7 +199,7 @@ a {
     font-size: 22px;
 }
 
-.name:hover {
+.card:hover .name {
     transition: .3s all;
     color: #d73e4d;
 }
@@ -221,49 +224,90 @@ a {
     color: white;
 }
 
-.block {
+.card-container {
     width: 80%;
     margin: auto;
-    color: #808489;
     overflow: auto;
     font-family: raleway, sans-serif;
+    padding: 75px 0px;
 }
 
-.box {
+.card-box {
     width: 33.33%;
+    margin: 0;
     float: left;
+    padding: 30px 15px;
+    overflow: hidden;
 }
 
-.box-container {
-    padding: 15px;
+.card-blog {
+    height: 350px;
+    margin: 0;
+    border: 1px solid #808489;
 }
 
-.contain {
-    padding: 120px 50px;
-    border-color: #808489;
-    border-style: solid;
-    border-width: 0.5px;
-    position: relative;
+.item {
+    padding: 15px 20px;
 }
 
-.icon {
+.card-img {
+    transform: translateY(60px);
+    text-align: center;
+    transition-duration: 0.2s;
+}
+
+.font {
+    color: #6f6f6f;
     font-size: 48px;
-    margin-bottom: 12px;
+    padding: 10px 0px;
+    margin: 0;
 }
 
-.icon-name {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19.8px;
+.card-img h6 a {
+    color: #6f6f6f;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 19px;
+    margin: 0;
+    padding: 20px 0px;
 }
 
-.box::before {
-    content: "";
-    top: -10px;
-    transition: .3s all;
-    position: absolute;
+.item p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0;
+    padding: 10px 0px;
+    opacity: 0;
+    transform: translate(0px, 35px);
+    text-align: center;
+    transition-delay: 0.2s;
 }
 
-.box::before:hover {
-    border-color: #d73e4d;
+.card-blog:hover {
+    border: 1px solid #d73e4d;
+}
+
+.item:hover .card-img {
+    transform: translateY(-37px);
+    transition: .3s all ease-in-out;
+}
+
+.item:hover .card-img h6 a {
+    color: #d73e4d;
+}
+
+.item:hover .card-img .font {
+    color: #d73e4d;
+    padding: 0px 20px;
+    background-color: #232a34;
+    transition: .3s all ease-in-out;
+}
+
+.item:hover p {
+    transition: .3s all ease-in-out;
+    transition-delay: 0.2s;
+    transform: translate(0px, -1px);
+    opacity: 1;
 }
